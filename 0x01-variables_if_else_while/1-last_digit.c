@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-  /**
+/**
    * main - Checks last digit
    *
    *Return: zero
-   */
+*/
 int main(void)
 {
 	int n;
