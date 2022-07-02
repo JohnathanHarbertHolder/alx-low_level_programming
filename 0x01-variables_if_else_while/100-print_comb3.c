@@ -1,34 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
-*/
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
+ */
 int main(void)
 {
-int x, y;
-
-for (x = 48; x <= 57; x++)
+int i = 0;
+int j = 0;
+for (i = 0; i < 10; i++)
 {
-for (y = 48; y <= 57; y++)
+for (j = i + 1; j < 10; j++)
 {
-if (x == y || y <= x)
-{
-}
-else
-{
-putchar(x);
-putchar(y);
-if (x == 56 && y == 57)
-{
-}
-else
-{
-putchar(44);
+putchar(48 + i);
+putchar(48 + j);
+putchar(',');
 putchar(' ');
 }
 }
-}
-}
-putchar('\n');
+putchar ('\n');
 return (0);
+}
