@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 /**
  * main - output all single digit number of base 10
