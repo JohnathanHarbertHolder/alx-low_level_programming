@@ -3,7 +3,7 @@
  * main - output all single digit number of base 10
  *
  * Return: 0 if successful
- */
+*/
 int main(void)
 {
 	int var;
