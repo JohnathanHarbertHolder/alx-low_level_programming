@@ -1,34 +1,29 @@
 #include "main.h"
 
 /**
- * _strspn - main function.
- * @s: Pointer to the string.
- * @accept: Pointer to the character to print.
- *
- * Description: This function gets the length of a prefix substring.
- *
- * Return:  the number of bytes in the initial segment of *s which
- * consist only of bytes from *accept.
+ * _strspn - function
+ * @s: first string
+ * @accept: second string
+ * Return: unsigned int
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0, c, p = 0;
+	unsigned int i, j, stop;
 
-	while (s[i])
+	for (i = 0; *(s + i + 1) ; i++)
 	{
-		for (c = 0; accept[c]; c++)
+		stop = 1;
+		for (j = 0; *(accept + j + 1); j++)
 		{
-			if (s[i] == accept[c])
+			if (*(s + i) == *(accept + j))
 			{
-				p++;
+				stop = 0;
+				break;
 			}
 		}
-		if (p < i)
-		{
+		if (stop == 1)
 			break;
-		}
-		i++;
 	}
-	return (p);
-
+	return (i);
+}
