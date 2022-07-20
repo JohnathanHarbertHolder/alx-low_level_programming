@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * wildcmp - Funtion
  *
@@ -7,7 +8,7 @@
  * @s2: Variable
  *
  * Return: Int
- */
+*/
 int wildcmp(char *s1, char *s2)
 {
 
