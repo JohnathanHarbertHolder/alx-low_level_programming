@@ -1,1 +1,1 @@
-My dynamic libraries functions readme
+dynamic_libraries
